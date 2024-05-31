@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/CSS/Style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script defer src="/JavaScript/leaflet.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <Header class="IndexHeader">
+        <figure>
+            <a href="index.html"><img src="/Assets/SH Tuning (1).png" alt="SH-Tuning"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop.html">Producten</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="klantenPagina.html">Klanten</a></li>
+                </ul>
+            </nav>
+        </figure>
+        <form class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </Header>
+    <main class="ContactMain">
+
+        <form class="formulier" action="#" method="post">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Verstuur</button>
+        </form>
+
+        <div id="map"></div>
+        <aside class="ReviewsAside">
+            <h2>Customer Reviews</h2>
+
+            <article class="review">
+                <p class="reviewer">John Doe</p>
+                <p class="review-text">"Great products and excellent service! I highly recommend SH-Tuning."</p>
+            </article>
+
+            <article class="review">
+                <p class="reviewer">Jane Smith</p>
+                <p class="review-text">"The wide body kit completely transformed the look of my car. Very satisfied!"
+                </p>
+            </article>
+
+            <article class="review">
+                <p class="reviewer">Mike Johnson</p>
+                <p class="review-text">"Impressive selection of performance parts! The ordering process was smooth, and
+                    delivery was prompt."</p>
+            </article>
+
+            <article class="review">
+                <p class="reviewer">Emily Rodriguez</p>
+                <p class="review-text">"The customer support team at SH-Tuning is top-notch. They answered all my
+                    questions and provided great assistance."</p>
+            </article>
+        </aside>
+
+
+    </main>
+    <footer>
+        <p> &copy; 2023 SHTuning. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
